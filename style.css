@@ -236,3 +236,23 @@ textarea{
     border: 1px solid #fff;
     padding: 10px;
 }
+
+@media screen and (max-width: 600px){
+    #header{
+        padding: 10px 16px;
+    }
+
+    #video_bg{
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .contact_info,
+    .contact_form{
+        width: 100%;
+    }
+}
