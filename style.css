@@ -1,50 +1,50 @@
 @charset "UTF-8";
 
-html {
+html{
     font-size: 100%;
 }
-body {
+
+body{
     color: #121212;
-    font-size: 0.9rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    line-height: 1.7;;
 }
-a {
+
+a{
     color: #121212;
     text-decoration: none;
 }
-img {
+
+img{
     max-width: 100%;
 }
 
-video{
-    max-width: 100%;
-}
-
-li {
+li{
     list-style: none;
 }
-.site-title {
-    line-height: 1px;
-}
-.site-title a {
+
+
+
+.site_title a{
     display: block;
 }
-.sec-title {
-    font-size: 2.25rem;
+
+.sec_title{
     margin-bottom: 30px;
     text-align: center;
 }
 
-/*-----フェードイン設定-----*/
-
-.fadein {
-    opacity : 0;
-    transform: translateY(20px);
+.fadein{
+    opacity: 0;
+    transform: translate(50px);
     transition: all 1s;
 }
-/*-----header-----*/
 
-.header{
+/*---------------------------------------*/
+/* header */
+/*---------------------------------------*/
+
+#header{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,7 @@ li {
     background-color: #fff;
 }
 
-.navi {
+#navi{
     display: block;
     position: fixed;
     top: 0;
@@ -72,49 +72,41 @@ li {
     opacity: 0;
 }
 
-.navi a{
+#navi a{
     color: #fff;
 }
 
-.open #navi {
+.open #navi{
     left: 0;
     opacity: 1;
 }
 
-.navi ul {
-    margin: 0;
-    padding: 0;
+.nav_menu{
+    margin-bottom: 50px;
 }
 
-.navi ul.nav-menu {
-    margin-bottom: 60px;
-    border-top: solid 1px #fff;
-}
-
-.navi ul.nav-menu li {
-    position: relative;
-    margin: 0;
+.nav_menu li{
+    border-bottom: 1px solid #fff;
     padding: 20px 0;
-    border-bottom: solid 1px #fff;
 }
 
-.navi ul.nav-sns li {
-      padding: 5px 0;
+.nav_sns li{
+    padding: 1opx 0;
 }
-
-.toggle_btn {
+/*---------------------------------------*/
+.toggle_btn{
     display: block;
     position: fixed;
     top: 25px;
     right: 45px;
     width: 30px;
     height: 30px;
-    transition: all .5s;
+    transition: all 1s;
     cursor: pointer;
     z-index: 20;
 }
 
-.toggle_btn span {
+.toggle_btn span{
     display: block;
     position: absolute;
     left: 0;
@@ -122,52 +114,60 @@ li {
     height: 2px;
     background-color: #333;
     border-radius: 4px;
-    transition: all .5s;
+    transition: all 1s;
 }
 
-.toggle_btn span:nth-child(1) {
+.toggle_btn span:nth-child(1){
     top: 4px;
 }
 
-.toggle_btn span:nth-child(2) {
+.toggle_btn span:nth-child(2){
     top: 14px;
 }
 
-.toggle_btn span:nth-child(3) {
+.toggle_btn span:nth-child(3){
     bottom: 4px;
 }
 
-.open .toggle_btn span {
+.open .toggle_btn span{
     background-color: #fff;
 }
 
-.open .toggle_btn span:nth-child(1) {
+.open .toggle_btn span:nth-child(1){
     -webkit-transform: translateY(10px) rotate(-315deg);
     transform: translateY(10px) rotate(-315deg);
 }
 
-.open .toggle_btn span:nth-child(2) {
+.open .toggle_btn span:nth-child(2){
     opacity: 0;
 }
 
-.open .toggle_btn span:nth-child(3) {
+.open .toggle_btn span:nth-child(3){
     -webkit-transform: translateY(-10px) rotate(315deg);
     transform: translateY(-10px) rotate(315deg);
 }
-
-.mask {
+/*---------------------------------------*/
+#mask{
     display: none;
-    transition: all .5s;
 }
-.open .mask {
+
+.open #mask{
     display: block;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
-    opacity: .8;
+    opacity: 0.8;
     z-index: 10;
+    background-color: #000;
     cursor: pointer;
+}
+
+/*---------------------------------------*/
+/* main */
+/*---------------------------------------*/
+
+#video_bg{
+    width: 100%;
 }
